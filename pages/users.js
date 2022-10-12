@@ -1,15 +1,11 @@
 import {useState} from 'react';
 import Link from "next/link";
+import MainContainer from "../components/MainContainer";
 
 
 const Users = ({users}) => {
-    // const [users, setUsers] = useState([
-    //     {id: 1, name: 'Nine'},
-    //     {id: 2, name: 'Ava'},
-    // ])
-
     return (
-        <div>
+        <MainContainer>
             <h1>Users page</h1>
             <ul>
                 {users.map(user => (
@@ -20,7 +16,7 @@ const Users = ({users}) => {
                     </li>
                 ))}
             </ul>
-        </div>
+        </MainContainer>
     );
 };
 

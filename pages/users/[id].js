@@ -1,15 +1,18 @@
 import React from 'react';
 import {useRouter} from "next/router";
 import styles from '../../styles/User.module.scss';
+import MainContainer from "../../components/MainContainer";
 
 const Id = ({user}) => {
     const {query} = useRouter();
 
     return (
-        <div className={styles.user}>
-            <h1>Пользователь c id {query.id}</h1>
-            <div>Name: {user.name}</div>
-        </div>
+        <MainContainer>
+            <div className={styles.user}>
+                <h1>Пользователь c id {query.id}</h1>
+                <div>Name: {user.name}</div>
+            </div>
+        </MainContainer>
     );
 };
 
