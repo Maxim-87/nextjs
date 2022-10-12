@@ -6,23 +6,10 @@ import MainContainer from "../components/MainContainer";
 
 const Index = () => {
     return (
-        <MainContainer>
+        <MainContainer keywords={'main page'}>
         <div>
             <h1>Main page</h1>
-            <style jsx>
-                {`
-                  .navbar {
-                    background-color: orange;
-                    padding: 15px;
-                  }
-                  .link {
-                    text-decoration: none;
-                    margin: 10px;
-                    padding: 5px;
-                    color: whitesmoke;
-                  }
-                `}
-            </style>
+
         </div>
         </MainContainer>
     );

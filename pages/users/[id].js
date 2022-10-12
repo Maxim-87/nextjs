@@ -7,7 +7,7 @@ const Id = ({user}) => {
     const {query} = useRouter();
 
     return (
-        <MainContainer>
+        <MainContainer keywords={user.name}>
             <div className={styles.user}>
                 <h1>Пользователь c id {query.id}</h1>
                 <div>Name: {user.name}</div>
